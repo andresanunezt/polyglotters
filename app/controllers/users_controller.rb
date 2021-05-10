@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
     before_action :find_user, only: [:show]
 
+    def index
+        @users = User.all
+    end
             
         
     def new
@@ -29,6 +32,8 @@ class UsersController < ApplicationController
 
 
 
+
+    
     def find_user
         @user = User.find_by_id(params[:id])
     end
