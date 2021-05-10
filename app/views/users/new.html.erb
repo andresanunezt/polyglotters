@@ -1,0 +1,14 @@
+<%= form_with model: @user do |f| %>
+        <br>
+        <%= f.label :name, "Name" %><br>
+        <%= f.text_field :name %><br>
+        <%= f.label :username,"Username" %><br>
+        <%= f.text_field :username %><br>
+        <%= f.label :email, "e-mail" %><br>
+         <%= f.text_field :email %><br>
+        <%= f.label :password, "Password" %><br>
+        <%= f.password_field :password %><br>
+        <%= f.submit "signup" %>
+
+
+<% end %>
