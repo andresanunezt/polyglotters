@@ -2,6 +2,7 @@ class UsersController < ApplicationController
     before_action :find_user, only: [:show]
 
     def index
+      
         @users = User.all
     end
             
@@ -28,6 +29,17 @@ class UsersController < ApplicationController
             render :new
         end
     end
+
+    def edit
+    end
+    
+    def update
+        
+        @user.update(user_params)
+       
+        redirect_to user_path(@user)
+            
+    end 
             
 
 

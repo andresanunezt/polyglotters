@@ -11,6 +11,15 @@
   </head>
 
   <body>
+
+<% if logged_in? %>
+<h2> Welcome <%= current_user.name %> </h2>
+<%  end %>
+
+
     <%= yield %>
+  
+  <%= render 'layouts/nav' %>
+    
   </body>
 </html>

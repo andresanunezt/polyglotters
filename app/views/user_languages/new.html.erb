@@ -1,0 +1,11 @@
+<h1>Add a Language to Your Roster!</h1>
+<br>
+    <% if @user_language.errors.any? %>
+        <% @user_language.errors.full_messages.each do |error| %>
+        
+            <h4><%= error %></h4>
+
+        <% end %>
+    <% end %>
+<br>
+<%= render "form" %>

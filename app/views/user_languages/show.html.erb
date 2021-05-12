@@ -11,7 +11,22 @@
 <h3> Time Spent:</h3>
 <br>
 <%= "#{@user_language.time_spent} Hours" %>
-<h3> Enjoying?:</h3>
+<h3> Enjoying?</h3>
 <br>
-<%= "#{@user_language.enjoying}" %>
+<%=  @user_language.enjoying %>
+   
 
+
+<br>
+<br>
+<%= link_to "Back", user_languages_path %>
+<br>
+<br>
+<br>
+<br>
+<% if logged_in? && current_user.id == @user_language.user.id%>
+<%= link_to "Edit", edit_user_user_language_path(@user_language) %>
+<br>
+<br>
+<%= link_to "Delete", user_language_path(@user_language), data: { method: :delete } %> 
+<% end %>

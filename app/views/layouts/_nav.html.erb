@@ -1,0 +1,39 @@
+
+<br><br>
+
+--------
+
+<br><br>
+
+
+
+
+<% if logged_in? %>
+<br>
+<br>
+<br>
+<br>
+<%= link_to "Add Language", new_user_user_language_path(current_user) %> 
+<br>
+<%= link_to "Log Out", logout_path,  method: :delete %>
+<br>
+<%= link_to "Profile", user_path(current_user) %>
+<% else %>
+<br>
+<br>
+<br>
+<br>
+<%= link_to "Sign Up", new_user_path %> <br>
+<%= link_to "Log In",  login_path    %>
+
+<% end %>
+<br><br>
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+<br><br>
