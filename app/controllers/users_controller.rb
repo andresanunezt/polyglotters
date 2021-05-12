@@ -8,7 +8,11 @@ class UsersController < ApplicationController
             
         
     def new
+        if !logged_in?
         @user = User.new
+        else
+            redirect_to user_path(current_user.id)
+        end
     end
 
     def show 

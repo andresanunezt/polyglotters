@@ -42,8 +42,8 @@ class UserLanguagesController < ApplicationController
 
 
     def edit
-        if params[:user_id]
-        # if logged_in? && params[:user_id] = current_user.id
+        # if params[:user_id]
+        if logged_in? && params[:user_id] = current_user.id
           user = User.find_by(id: params[:user_id])
           if user.nil?
             redirect_to user_languages_path, alert: "user not found."
@@ -52,7 +52,8 @@ class UserLanguagesController < ApplicationController
             redirect_to user_languages_path, alert: "user language found." if @user_language.nil?
           end
         else
-          @user_language = UserLanguage.find(params[:id])
+        #   @user_language = UserLanguage.find(params[:user_id])
+        redirect_to user_languages_path, alert: "You don't have permission to do this!"
         end
       end 
 
