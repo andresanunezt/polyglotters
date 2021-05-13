@@ -22,10 +22,13 @@ class SessionsController < ApplicationController
 
 
     def destroy
-     session.clear
-    
-     redirect_to login_path
-    
+     
+        if logged_in? 
+            session.clear
+            redirect_to login_path
+        else
+            redirect_to user_language_path
+        end
     end
       
 

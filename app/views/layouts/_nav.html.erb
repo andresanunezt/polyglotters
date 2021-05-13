@@ -18,6 +18,8 @@
 <%= link_to "Log Out", logout_path,  method: :delete %>
 <br>
 <%= link_to "Profile", user_path(current_user) %>
+<br>
+<%= link_to "home", home_path  %>
 <% else %>
 <br>
 <br>
@@ -25,6 +27,8 @@
 <br>
 <%= link_to "Sign Up", new_user_path %> <br>
 <%= link_to "Log In",  login_path    %>
+<br>
+<%= link_to "home", home_path  %>
 
 <% end %>
 <br><br>

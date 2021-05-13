@@ -1,10 +1,13 @@
- <h1>Check Out These Polyglotters' Language Learning Journey! </h1>
- 
+ <% if params[:user_id] %>
+<h1>  <%= "#{@user.name}'s " %> language learning journeys! </h1>
+ <% else %>
+<h1>Check Out These Polyglotters' Language Learning Journey! </h1>
+ <% end %>
  
  <br>
  <ul>
 
-<%=  @user_languages.each do |user_language|%>
+<% @user_languages.each do |user_language|%>
  
  <li><%= link_to ("#{user_language.user.name}'s #{user_language.language.name} Journey" ),user_language_path(user_language) %></li>
              
