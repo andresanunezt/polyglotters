@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-
+  
   resources :users do
     
   resources :user_languages
@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :user_languages
   resources :languages
 
-  
+  get '/auth/:provider/callback', to: 'sessions#omniauth'
 
   get 'login', to: "sessions#new"
 

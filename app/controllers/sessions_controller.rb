@@ -1,5 +1,19 @@
 class SessionsController < ApplicationController
     
+    def omniauth  
+       binding.pry
+        user = User.create_from_omniauth(auth)
+        if user.valid?
+            session[:user_id] = user.id
+            # user.name =
+            redirect_to user_languages_path
+        else
+            flash[:message] = user.errors.full_messages.join(", ")
+            redirect_to login_path
+        end
+    end
+   
+    
     def new
         if logged_in?
             redirect_to user_languages_path
@@ -30,7 +44,14 @@ class SessionsController < ApplicationController
             redirect_to user_language_path
         end
     end
+
+   
       
+
+    private
+    def auth
+        request.env['omniauth.auth']
+    end
 
  
 end
