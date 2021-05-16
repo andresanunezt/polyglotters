@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
     
     def omniauth  
-       binding.pry
+    #    binding.pry
         user = User.create_from_omniauth(auth)
         if user.valid?
             session[:user_id] = user.id

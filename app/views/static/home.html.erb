@@ -1,32 +1,14 @@
 <br>
 --------------------------------------------------------------
 <br>
-<h1>  homepage </h1>
+<h1>  HOMEPAGE </h1>
 <br>
-<%= link_to "language stories", user_languages_path %>
+<h4>  <%= link_to "language stories", user_languages_path %> </h4>
 <br>
-<%= link_to "Languages", languages_path %>
+ <h4>  <%= link_to "Languages", languages_path %> </h4> 
 
- <%= button_to "Log in with Google", '/auth/google_oauth2/'%>
+  <h4>  <%= button_to "Log in with Google", '/auth/google_oauth2/'%> </h4> 
 
+<h4>Latest Language: </h4>
+<%= link_to @latest_language.name, language_path(@latest_language.id) %>
 
-<div class="container">
-  <%# <header><img src="images/red_triangle_logo.png" class="img-responsive main-image"></header> %>
-  <div  color="red" class="col-md-8 col-md-offset-2">
-    <h2>HOMEPAGE</h2>
-
-    <div class="content">
-     <p>
-    <h3>WELCOME</h3>
-    </p>
-    </div>
-    <ul>
-    <strong>X-PLPORE</strong>
-       <li> <%= link_to "language stories", user_languages_path %> </li> 
-        
-         <li>   <%= link_to "Languages", languages_path %> </li> 
-      
-        
-      </ul>
-  </div>
-</div>
