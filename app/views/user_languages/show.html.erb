@@ -13,8 +13,11 @@
 <%= "#{@user_language.time_spent} Hours" %>
 <h3> Enjoying?</h3>
 <br>
-<%=  @user_language.enjoying %>
-   
+<% if  @user_language.enjoying  == true %>
+<h3> yes </h3>
+<% else %>
+<h3> no </h3>
+<% end%>   
 
 
 <br>

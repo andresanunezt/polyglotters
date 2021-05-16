@@ -2,7 +2,8 @@ class StaticController < ApplicationController
     
     def home
 
-        @latest_language = Language.joins(:user_languages).order(:name).last
+        @most_spoken_language = Language.where("number_of_speakers").max
+
         
     end
     
