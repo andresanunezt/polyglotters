@@ -15,11 +15,14 @@
 <br>
 <%= link_to "Add Language", new_user_user_language_path(current_user) %> 
 <br>
-<%= link_to "Log Out", logout_path,  method: :delete %>
-<br>
 <%= link_to "My Languages", user_user_languages_path(current_user) %>
 <br>
-<%= link_to "home", home_path  %>
+<br>
+<br>
+<%= link_to "Log Out", logout_path,  method: :delete %>
+<br>
+<br>
+<%= link_to "Home", home_path  %>
 <% else %>
 <br>
 <br>
