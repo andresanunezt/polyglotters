@@ -3,12 +3,15 @@
 <br>
 <h1>  HOMEPAGE </h1>
 <br>
-<h4>  <%= link_to "language stories", user_languages_path %> </h4>
+<h4>  <%= link_to "Language Learning Journeys!", user_languages_path %> </h4>
 <br>
  <h4>  <%= link_to "Languages", languages_path %> </h4> 
 
   <h4>  <%= button_to "Log in with Google", '/auth/google_oauth2/'%> </h4> 
 
-<h4>Most Spoken Language </h4>
-<%= link_to @most_spoken_language.name, language_path(@most_spoken_language.id) %>
-
+<h4>Latest Languages:</h4>
+<ul>
+<% @latest_languages.each do | latest_language |%>
+<li> <%= link_to latest_language.name, language_path(latest_language.id) %> </li>
+<% end %> 
+</ul>
