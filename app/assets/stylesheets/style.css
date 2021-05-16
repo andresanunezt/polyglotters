@@ -1,6 +1,6 @@
 body {
     header: "poliglotters.png";
-    background-image: url("poliglotters.png");
+    background-image: url("green_polyg.png");
     background-color: lightblue;       <<<Try hexadecimal, RGB, color
     background-size: 100%;         <<< Try %, pixels(px)
     color: white;                  <<<Try hexadecimal, RGB, word
