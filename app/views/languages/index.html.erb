@@ -1,11 +1,11 @@
- <ul>
+<h1> All Languages </h1>
 
         <% @languages.each do | language | %>
 
-            <li><%= link_to language.name, language_path(language) %></li>
+            <h3><%= link_to language.name, language_path(language) %></h3>
              
             <br><br>
 
         <% end %>
 
-    </ul>
+
