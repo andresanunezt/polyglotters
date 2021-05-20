@@ -13,10 +13,17 @@
 
 </div>
 
+<br>
+<br>
 
-
-<h4 >Latest Languages: </h4>
+<h4 >Our Latest Languages: </h4>
 
 <% @latest_languages.each do | latest_language |%>
  <p> <%= link_to latest_language.name, language_path(latest_language.id) %> </p>
+<% end %> 
+
+<h4 >The Latest Language Journeys: </h4>
+
+<% @latest_user_languages.each do | user_language |%>
+ <p> <%= link_to ("#{user_language.user.name}'s #{user_language.language.name} Journey" ),user_language_path(user_language) %> </p>
 <% end %> 
