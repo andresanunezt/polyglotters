@@ -1,24 +1,17 @@
-# README
+# Polyglotters
+Welcome to Polyglotters webapp, a platform for people who enjoy learning different languages at the same time to document their journey.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Installation
+Simply clone this repo and run `bundle install`.
+Run `rake db:migrate`.
+Once all the appropriate gems are installed accessing the webpp can be accessed through `rails s` or any other local server.
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+## Contributing
+Bug reports and pull requests are welcome on GitHub [here](https://github.com/andresanunezt/polyglotters/pulls).
 
-* Database creation
+## License
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
