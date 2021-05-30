@@ -1,3 +1,6 @@
+<% if flash[:alert]%>
+<%= flash[:alert]%> 
+<% end %>
  <% if params[:user_id] %>
 <h1>  <%= "#{@user.name}'s " %> language learning journeys! </h1>
  <% else %>

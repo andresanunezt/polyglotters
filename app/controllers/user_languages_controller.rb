@@ -25,7 +25,8 @@ class UserLanguagesController < ApplicationController
             find_user
             @user_language = @user.user_languages.build   
         else
-            flash[:alert] = "You do not have access to this page!"
+            flash[:alert] = "YOU CAN'T DO THAT!"
+            
             redirect_to user_languages_path   
         end
 
@@ -50,6 +51,7 @@ class UserLanguagesController < ApplicationController
             user = UserLanguage.find_by(id: params[:id]).user
             @user_language = user.user_languages.find_by(id: params[:id])
         else
+            flash[:alert] = "You do not have access to this page!"
             redirect_to user_languages_path
         end
       end 

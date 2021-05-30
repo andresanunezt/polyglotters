@@ -50,3 +50,4 @@ you would select with .<classname>
 #selecting a anchor tag within a nav tag <nav> <%=link_to "whatever", user_path</nav>
 .nav a {                     <<<<can access nested tags this way
 }
+
