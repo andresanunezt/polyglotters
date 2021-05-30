@@ -33,7 +33,12 @@ end
         "French",
         "Korean",
         "Japanese",
-        "German"
+        "German",
+        "Russian",
+        "Farsi",
+        "Urdu",
+        "Chinese(Mandarin)",
+        "Vietnamese"
     ]
       
     
