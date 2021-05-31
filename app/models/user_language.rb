@@ -8,4 +8,9 @@ class UserLanguage < ApplicationRecord
     def self.search(params)
 
     end
+
+
+    scope :last_5, -> { order(:created_at).reverse_order.limit(5) } 
+    
+    
 end
