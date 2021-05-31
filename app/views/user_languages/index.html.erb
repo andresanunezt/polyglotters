@@ -7,6 +7,13 @@
 <h1>Check Out These Polyglotters' Language Learning Journey! </h1>
  <% end %>
  
+
+<%= form_tag("/user_languages", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
  <br>
  <ul>
 

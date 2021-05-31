@@ -10,6 +10,9 @@ class UserLanguagesController < ApplicationController
         else
         @user_languages = UserLanguage.all
         end
+        if params[:q]
+            @user_languages = @user_languages.search(params[:q])
+        end
     end
 
 

@@ -4,4 +4,8 @@ class UserLanguage < ApplicationRecord
 
     validates :goals, :why_learn, :user_id, :language_id, presence: true
 
+
+    def self.search(params)
+
+    end
 end
