@@ -1,5 +1,5 @@
 <% if flash[:alert]%>
-<%= flash[:alert]%> 
+<h4 class="error"> <%= flash[:alert]%> </h4>
 <% end %>
  <% if params[:user_id] %>
 <h1>  <%= "#{@user.name}'s " %> language learning journeys! </h1>

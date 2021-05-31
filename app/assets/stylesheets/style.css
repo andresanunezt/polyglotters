@@ -51,3 +51,7 @@ you would select with .<classname>
 .nav a {                     <<<<can access nested tags this way
 }
 
+.error {
+    color: tomato;
+    font-size: 40px; 
+}

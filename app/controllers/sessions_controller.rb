@@ -6,9 +6,9 @@ class SessionsController < ApplicationController
         if user.valid?
             session[:user_id] = user.id
             # user.name =
-            redirect_to user_languages_path
+            redirect_to user_path(user.id)
         else
-            flash[:message] = user.errors.full_messages.join(", ")
+            flash[:alert] = user.errors.full_messages.join(", ")
             redirect_to login_path
         end
     end
@@ -29,6 +29,7 @@ class SessionsController < ApplicationController
             session[:user_id] = @user.id
             redirect_to user_path(@user)
     else
+        flash[:alert] = "INCORRECT INFORMATION. PLEASE TRY AGAIN"
         redirect_to login_path        #  redirect_to login_path
      end
     
