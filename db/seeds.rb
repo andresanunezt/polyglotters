@@ -37,7 +37,7 @@ end
         "Russian",
         "Farsi",
         "Urdu",
-        "Chinese(Mandarin)",
+        "Chinese",
         "Vietnamese"
     
     ]
