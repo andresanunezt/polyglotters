@@ -6,12 +6,15 @@ class UserLanguagesController < ApplicationController
         if params[:user_id]
             @user = User.find_by_id(params[:user_id])
             @user_languages = User.find_by_id(params[:user_id]).user_languages
-            
         else
         @user_languages = UserLanguage.all
         end
         if params[:q]
-            @user_languages = @user_languages.search(params[:q])
+             @user_languages = UserLanguage.search(params[:q].capitalize)
+            if @user_languages == UserLanguage.order(:created_at)
+                flash[:error] = "No"
+            end
+            
         end
     end
 

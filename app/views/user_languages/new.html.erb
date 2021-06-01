@@ -3,7 +3,7 @@
     <% if @user_language.errors.any? %>
         <% @user_language.errors.full_messages.each do |error| %>
         
-            <h4><%= error %></h4>
+            <h4 class="error"><%= error %></h4>
 
         <% end %>
     <% end %>

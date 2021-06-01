@@ -5,8 +5,6 @@
 <h1>  <%= "#{@user.name}'s " %> language learning journeys! </h1>
  <% else %>
 <h1>Check Out These Polyglotters' Language Learning Journey! </h1>
- <% end %>
- 
 
 <%= form_tag("/user_languages", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
@@ -15,6 +13,9 @@
 <% end %>
 
  <br>
+ <% end %>
+ 
+
  <ul>
 
 <% @user_languages.each do |user_language|%>
