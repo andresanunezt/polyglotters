@@ -3,6 +3,7 @@
 
 <% if logged_in? %>
 --------
+<br>
 <%= link_to "Add Language", new_user_user_language_path(current_user) %> 
 <br>
 <%= link_to "My Languages", user_user_languages_path(current_user) %>
