@@ -1,18 +1,8 @@
 
-<br><br>
-
-
-<br><br>
-
-
 
 
 <% if logged_in? %>
-<br>
-<br>
-<br>
 --------
-<br>
 <%= link_to "Add Language", new_user_user_language_path(current_user) %> 
 <br>
 <%= link_to "My Languages", user_user_languages_path(current_user) %>
@@ -25,9 +15,6 @@
 <br>
 <% else %>
 <br>
-<br>
-<br>
-<br>
 -----------
 <br>
 <%= link_to "Sign Up", new_user_path %> <br>
@@ -38,11 +25,4 @@
 <br>
 
 <% end %>
-<br><br>
-
-
-
-
-
-
 <br><br>
