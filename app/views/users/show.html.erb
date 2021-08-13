@@ -6,17 +6,6 @@
         <br>
       
 
-<h3> Currently Learning! </h3>
-        <% @user.user_languages.each do | lang | %>
-        <div class="center">
-        <ul>
-       
-
-       <h4><li> <%= link_to lang.language.name, user_language_path(lang.id) %> </li></h4>
-
-       </ul>
-       </div>
-        <%end%>
 
 
      

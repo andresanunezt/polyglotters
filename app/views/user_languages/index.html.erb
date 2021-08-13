@@ -5,28 +5,31 @@
 <h1>  <%= "#{@user.name}'s " %> language learning journeys! </h1>
  <% else %>
 <h1>Check Out These Polyglotters' Language Learning Journey! </h1>
-
+<div class="center">
 <%= form_tag("/user_languages", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
   <%= text_field_tag(:q) %>
   <%= submit_tag("Search") %>
+  </div>
 <% end %>
 
  <br>
  <% end %>
  
 
- <ul>
-
+ 
+<div class="center">
+<ul>
 <% @user_languages.each do |user_language|%>
- <div class="center">
+ 
  <li><%= link_to ("#{user_language.user.name}'s #{user_language.language.name} Journey" ),user_language_path(user_language) %></li>
              
-           </div>
+           
 
  <% end %>
+ </ul>
+</div>
 
-</ul>
 
 
 

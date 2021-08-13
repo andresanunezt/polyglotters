@@ -8,9 +8,7 @@
 <h5> I'd like to learn:</h5>
 <%= @user_language.learn_next%>
 <br>
-<h5> Spent: </h5>
-<%= "#{@user_language.time_spent} Hours" %> 
-<br>
+
 <h5> Need to review:</h5>
 <% if  @user_language.review.empty? %>
 nothing at the moment
@@ -19,7 +17,7 @@ nothing at the moment
 <% end %>
 <h5> Time Spent:</h5>
 <%= "#{@user_language.time_spent} Hours" %> 
-<h5> Enjoying?</h5>
+<h5> Currently Enjoying?</h5>
 <% if  @user_language.enjoying  == true %>
  yes 
 <% else %>
