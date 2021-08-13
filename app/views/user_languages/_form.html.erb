@@ -1,3 +1,5 @@
+<div class="center">
+
 <%= form_with model: @user_language do |f| %>
     <br>
     <br>
@@ -23,11 +25,15 @@
     <%= f.label :enjoying, "No" %>
     <br>
         <br><br>
-
+            
             <%= f.submit "Track your Journey!" %>
-
+          
         <br><br>
+        </div>
 <% end %>
+<div class="center">
 
-<%= link_to "back", user_languages_path%>
+<p><%= link_to "back", user_languages_path%></p>
+
+</div>
 <br>

@@ -1,4 +1,9 @@
 <% @users.each do | user | %>
-
-<h2><li>  <%= link_to ("#{user.name} has learned  #{user.user_languages.count}"), user_user_languages_path(user) %> </h2></li> 
+<div class="center">
+<ul>
+<h3>
+<li>  <%= link_to ("#{user.name} has made  #{user.user_languages.count} entries!"), user_user_languages_path(user) %> </li> 
+<h3>
+</ul>
+</div>
 <% end %>

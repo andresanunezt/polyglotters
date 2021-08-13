@@ -4,15 +4,22 @@
         <br>
         <%= @user.email %>
         <br>
-        <ul>
         
+
 <h3> Currently Learning! </h3>
         <% @user.user_languages.each do | lang | %>
+        <div class="center">
+        <ul>
+       
+
        <h2><li> <%= link_to lang.language.name, user_language_path(lang.id) %> </li></h2>
+
+       </ul>
+       </div>
         <%end%>
 
 
-        </ul>
+     
 
 
 
