@@ -1,0 +1,4 @@
+<% @users.each do | user | %>
+
+<h2><li>  <%= link_to ("#{user.name} has learned  #{user.user_languages.count}"), user_user_languages_path(user) %> </h2></li> 
+<% end %>

@@ -3,18 +3,20 @@
     <br>
     <%= f.collection_select :language_id, Language.all, :id, :name %>
     <br>
-    <%= f.label :why_learn, "Why do you wanna learn?" %><br>
-    <%= f.text_area :why_learn %><br>
-    <%= f.label :goals, "Your Goals:" %> <br>
-    <%= f.text_area :goals %> <br>
-    <%= f.label :time_spent, "Hours Spent"%> <br>
+    <%= f.label :learned, "What did you last learn?" %><br>
+    <%= f.text_area :learned%><br>
+     <%= f.label :learn_next, "What would you like to learn next?" %> <br>
+    <%= f.text_area :review %> <br>
+    <%= f.label :review, "What do you need to review?" %> <br>
+    <%= f.text_area :review %> <br>
+    <%= f.label :time_spent, "How many hours did you spend?"%> <br>
     <%= f.number_field :time_spent %> <br>
     <br>
      <%# <%= f.collection_select :user_id, User.all, :id, :name %> 
      <%= f.hidden_field :user_id %>
     <br>
     <br>
-    <%= f.label :enjoying, "Enjoying?", value: false %> <br>
+    <%= f.label :enjoying, "Currently Enjoying?", value: false %> <br>
     <%= f.radio_button :enjoying, value = true %>
     <%= f.label :enjoying, "Yes" %>
     <%= f.radio_button :enjoying, value = false %>
@@ -22,7 +24,7 @@
     <br>
         <br><br>
 
-            <%= f.submit "Submit!" %>
+            <%= f.submit "Track your Journey!" %>
 
         <br><br>
 <% end %>
