@@ -38,7 +38,11 @@ end
         "Farsi",
         "Urdu",
         "Chinese",
-        "Vietnamese"
+        "Vietnamese",
+        "Python",
+        "Java",
+        "Ruby",
+        "JavaScript"
     
     ]
       
@@ -57,10 +61,13 @@ end
 
         20.times do
 
-            UserLanguage.create(time_spent: rand(1..1000000), 
+            UserLanguage.create(
+                                learned: "Sample material learned.",
+                                learn_next: "Sample material to learn next.",
+                                review: "Sample review material.",
+                                time_spent: rand(1..1000000), 
                                 enjoying: true, 
-                                why_learn: "Sample reason to learn",
-                                goals: "Sample Goals",
+                        
                                 user: User.all.sample,
                                 language: Language.all.sample
                             )

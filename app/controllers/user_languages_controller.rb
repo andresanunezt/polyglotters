@@ -88,9 +88,7 @@ class UserLanguagesController < ApplicationController
 
 
     def user_language_params
-        params.require(:user_language).permit(:why_learn, :goals,  :user_id, :language_id, :enjoying, :time_spent   
-    
-        )
+        params.require(:user_language).permit(:learned, :learn_next, :review, :user_id, :language_id, :enjoying, :time_spent  )
     end 
 
    
