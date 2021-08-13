@@ -1,11 +1,13 @@
 <h1> All Languages </h1>
-
+        <div class=center>
+        <ul>
         <% @languages.each do | language | %>
             
-            <li> <h3><%= link_to language.name, language_path(language) %></h3></li>
+            <li> <h4><%= link_to language.name, language_path(language) %></h4></li>
              
-            <br><br>
+    
 
         <% end %>
-
+        </ul>
+</div>
 
