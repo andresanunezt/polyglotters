@@ -1,6 +1,6 @@
 body {
     
-    /* background-image: url("resized_logo.png"); */
+    background-image: url("resized_logo.png");
     
     background-color: lightblue;       <<<Try hexadecimal, RGB, color
     background-size: 100%;         <<< Try %, pixels(px)
@@ -103,7 +103,7 @@ ul {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: lightblue;
+    background-color: lightgreen;
   }
   
   li a {
