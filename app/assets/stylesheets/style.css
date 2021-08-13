@@ -55,3 +55,43 @@ you would select with .<classname>
     color: red;
     font-size: 33px; 
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* li a {
+    display: block;
+    width: 10px;
+    background-color: #d41717;
+  } */
+
+  .nav_link {
+    text-align: left;
+    /* background: linear-gradient(168deg, rgba(255,255,255,1) 0%, rgba(249,200,174,1) 100%); */
+    padding: 7px;
+    font-size: 12px;
+}
+
+.navbar {
+    background-color: rgb(250, 246, 0);
+    font-size: large;
+    padding: 15px;
+  }
+  
+  .navlinks-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .navlink-li {
+    display: inline;
+    margin: 20px;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 16px;
+  }
