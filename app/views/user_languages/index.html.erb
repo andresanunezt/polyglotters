@@ -19,10 +19,10 @@
  <ul>
 
 <% @user_languages.each do |user_language|%>
- 
+ <div class="centered">
  <li><%= link_to ("#{user_language.user.name}'s #{user_language.language.name} Journey" ),user_language_path(user_language) %></li>
              
-            <br><br>
+           </div>
 
  <% end %>
 

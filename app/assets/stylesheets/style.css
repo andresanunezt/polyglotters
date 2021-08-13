@@ -68,17 +68,12 @@ ul {
     background-color: #d41717;
   } */
 
-  .nav_link {
-    text-align: left;
-    /* background: linear-gradient(168deg, rgba(255,255,255,1) 0%, rgba(249,200,174,1) 100%); */
-    padding: 7px;
-    font-size: 12px;
-}
+ 
 
 .navbar {
-    background-color: lightblue;
+   
     /* font-size: ; */
-    padding: 10px;
+    padding: 30px;
     font-size: medium;
   }
   
@@ -123,3 +118,10 @@ ul {
     background-color: #555;
     color: white;
   }
+
+  .center {
+    /* Magic here */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
