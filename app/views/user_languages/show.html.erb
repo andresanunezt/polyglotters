@@ -1,4 +1,4 @@
-<h1> <%= " #{@user_language.user.name}'s #{@user_language.language.name} journey! " %>  </h1>
+<h3> <%= " #{@user_language.user.name}'s #{@user_language.language.name} journey! " %>  </h3>
 
 <div class="center">
 <ul>
@@ -31,13 +31,14 @@ nothing at the moment
 <br>
 <h4><%= link_to "view all language journeys!", user_languages_path %> </h4>
 <br>
-<br>
-<br>
-<br>
 </ul>
 </div>
 <% if logged_in? && current_user.id == @user_language.user.id%>
-<h4><%= link_to "Edit", edit_user_user_language_path(@user_language) %></h4>
+<div class="center">
+<ul>
+<h4><li><%= link_to "Edit", edit_user_user_language_path(@user_language) %></li></h4>
 <br>
-<h4><%= link_to "Delete", user_language_path(@user_language), data: { method: :delete } %> </h4>
+<h4><li><%= link_to "Delete", user_language_path(@user_language), data: { method: :delete } %></li> </h4>
+</ul>
+</div>
 <% end %>
