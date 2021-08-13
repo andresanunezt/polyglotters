@@ -76,9 +76,10 @@ ul {
 }
 
 .navbar {
-    background-color: rgb(250, 246, 0);
-    font-size: large;
-    padding: 15px;
+    background-color: lightblue;
+    /* font-size: ; */
+    padding: 10px;
+    font-size: medium;
   }
   
   .navlinks-list {
@@ -95,3 +96,9 @@ ul {
     padding-top: 18px;
     padding-bottom: 16px;
   }
+
+  /* li a {
+    display: block;
+    width: 60px;
+    
+  } */
