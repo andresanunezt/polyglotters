@@ -3,13 +3,14 @@
 <h1>  HOMEPAGE </h1>
 <br>
 
-<div>
-<h4>  <%= link_to "Language Learning Journeys!", user_languages_path %> </h4>
+<div class="center">
+<ul>
+<h4> <li> <%= link_to "Language Learning Journeys!", user_languages_path %>  </li> </h4> 
 <br>
- <h4>  <%= link_to "Languages", languages_path %> </h4> 
+ <h4>  <li><%= link_to "Languages", languages_path %> </li> </h4> 
 
-  <h4>  <%= button_to "Log in with Google", '/auth/google_oauth2/'%> </h4> 
-
+  <h4> <%= button_to "Log in with Google", '/auth/google_oauth2/'%>  </h4> 
+</ul>
 </div>
 
 <br>
@@ -19,5 +20,9 @@
 <h4  >Check Out The Latest Language Journeys: </h4>
 
 <% @latest_user_languages.each do | user_language |%>
- <p> <%= link_to ("#{user_language.user.name}'s #{user_language.language.name} Journey" ),user_language_path(user_language) %> </p>
+<div class="center">
+<ul>
+ <h5><li> <%= link_to ("#{user_language.user.name}'s #{user_language.language.name} Journey" ),user_language_path(user_language) %> </li></h5>
+ </ul>
+ </div>
 <% end %> 
