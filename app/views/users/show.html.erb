@@ -1,10 +1,10 @@
 <h1> <%= @user.name %> </h1>
-        
-        <%= @user.username %>
+       
+       <h4> username: <%= @user.username %> </h4>
         <br>
-        <%= @user.email %>
+       <h4> email: <%= @user.email %> </h4>
         <br>
-        
+      
 
 <h3> Currently Learning! </h3>
         <% @user.user_languages.each do | lang | %>
@@ -12,7 +12,7 @@
         <ul>
        
 
-       <h2><li> <%= link_to lang.language.name, user_language_path(lang.id) %> </li></h2>
+       <h4><li> <%= link_to lang.language.name, user_language_path(lang.id) %> </li></h4>
 
        </ul>
        </div>
