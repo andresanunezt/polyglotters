@@ -2,11 +2,7 @@
 <html>
   <head>
 
-  <a class="navbar-brand" href="/">
-      <div class="logo-image">
-            <img src="resized_logo.png"" class="img-fluid">
-      </div>
-</a>
+ 
     <title>Polyglotters</title>
   
   
@@ -23,6 +19,11 @@
 </head>
   
   <body>
+   <a class="navbar-brand" href="/">
+      <div class="logo-image">
+            <img src="app/assets/images/resized_logo.png" class="img-fluid" alt="polyglotters-logo">
+      </div>
+</a>
 <% if logged_in? %>
 <h2> Welcome <%= current_user.name %> </h2>
 
