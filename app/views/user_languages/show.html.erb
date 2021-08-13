@@ -2,23 +2,28 @@
 
 <div class="center">
 <ul>
-<li>  Last learned: </li>
+<h5><li>  Last learned: </li></h5>
 <%= @user_language.learned%>
 <br>
-<h3> I'd like to learn:</h3>
-<h3><%= @user_language.learn_next%></h3>
+<h5> I'd like to learn:</h5>
+<%= @user_language.learn_next%>
 <br>
-<h3> Spent: </h3>
-<h3><%= "#{@user_language.time_spent} Hours" %> </h3>
+<h5> Spent: </h5>
+<%= "#{@user_language.time_spent} Hours" %> 
 <br>
-<h3> Need to review:</h3>
-<h3><%= "#{@user_language.time_spent} Hours" %> </h3>
-<br>
-<h3> Enjoying?</h3>
-<% if  @user_language.enjoying  == true %>
-<h3> yes </h3>
+<h5> Need to review:</h5>
+<% if  @user_language.review.empty? %>
+nothing at the moment
 <% else %>
-<h3> no </h3>
+<%= "#{@user_language.review}" %> 
+<% end %>
+<h5> Time Spent:</h5>
+<%= "#{@user_language.time_spent} Hours" %> 
+<h5> Enjoying?</h5>
+<% if  @user_language.enjoying  == true %>
+ yes 
+<% else %>
+ no 
 <% end%>   
 
 
