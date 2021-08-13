@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 2021_05_13_232537) do
     t.text "learned"
     t.text "learn_next"
     t.text "review"
-    
     t.boolean "enjoying"
     t.integer "time_spent"
     t.integer "user_id", null: false
