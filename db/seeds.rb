@@ -59,19 +59,40 @@ end
     
 
 
-        20.times do
+        # 20.times do
 
-            UserLanguage.create(
-                                learned: "Sample material learned.",
-                                learn_next: "Sample material to learn next.",
-                                review: "Sample review material.",
-                                time_spent: rand(1..1000000), 
-                                enjoying: true, 
+        #     UserLanguage.create(
+        #                         learned: "Sample material learned.",
+        #                         learn_next: "Sample material to learn next.",
+        #                         review: "Sample review material.",
+        #                         time_spent: rand(1..1000000), 
+        #                         enjoying: true, 
                         
-                                user: User.all.sample,
-                                language: Language.all.sample
-                            )
-                    end
+        #                         user: User.all.sample,
+        #                         language: Language.all.sample
+        #                     )
+        #             end
+
+
+       20.times do
+
+        UserLanguage.create(
+
+            learned: "Sample",
+            learn_next: "sample",
+            review: "sample review material",
+            time_spent: rand(1..1000000),
+            # goals: "whatever",
+            enjoying: true,
+            user: User.all.sample,
+            language: Language.all.sample
+            
+
+        )
+
+
+       end
+
 
 
 
