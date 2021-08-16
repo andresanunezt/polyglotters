@@ -1,6 +1,6 @@
 # Polyglotters
 
-Welcome to Polyglotters webapp, a platform for people who enjoy learning multiple languages at the same time can. Users can document their language learning journeys.
+Welcome to Polyglotters webapp, a platform for people who enjoy learning multiple languages at the same time. Users can document their language learning journeys.
 
 Check out the [DEMO VIDEO](https://www.youtube.com/watch?v=nIsbWhFnYFo&t=12s).
 
