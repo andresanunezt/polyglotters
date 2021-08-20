@@ -28,7 +28,7 @@ class UserLanguagesController < ApplicationController
             find_user
             @user_language = @user.user_languages.build   
         else
-            flash[:alert] = "YOU CAN'T DO THAT!"
+            flash[:alert] = "You do not have access to this page!"
             
             redirect_to user_languages_path   
         end
