@@ -1,9 +1,31 @@
+<!--
 <ul class="navmenu-ul">
   
   <li class="navmenu-li"><%= link_to "All Journeys!", user_languages_path %> </li>
 
-  <li class="navmenu-li"><%= link_to "Languages", languages_path %> </li>
+  <li class="navmenu-li"><%= link_to "All Journeys!", user_languages_path %> </li>
 
   <li class="navmenu-li"><a><%= link_to "Home", home_path  %></a></li>
 
-</ul>
+</ul> 
+--> 
+
+<%# <!--  %>
+<table style="width:100%">
+  <tr>
+    <th><li class="navmenu-li"><%= link_to "All Journeys!", user_languages_path %> </li></th>
+     <th><li class="navmenu-li"><%= link_to "All Langauges!", languages_path %> </li></th>
+     <td><li class="navmenu-li"><a><%= link_to "Home", home_path  %></a></li></td>
+    <th></th>
+  </tr>
+  <tr>
+    <td><li class="navmenu-li"><%= link_to "All Journeys!", user_languages_path %> </li></td>
+ 
+  </tr>
+  <tr>
+    <td><li class="navmenu-li"><a><%= link_to "Home", home_path  %></a></li></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table> 
+<%# --> %>
