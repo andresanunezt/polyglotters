@@ -131,19 +131,20 @@ ul {
 }
 
 
-.navmenu-ul {
+/* .navmenu-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color:lightsalmon;
-}
+} */
 
 .navmenu-li {
   /* float: left; */
   display: block;
   color: white;
   text-align: center;
+
   padding: 14px 16px;
   text-decoration: none;
   background-color:lightsalmon;
@@ -156,9 +157,10 @@ ul {
   
 }
 
-td {
+/* td {
 
   white-space: nowrap;
-  column-span: 4;
+  column-span: 0;
+  border-spacing: 0px;
 }
-
+ */
