@@ -144,8 +144,8 @@ ul {
   display: block;
   color: white;
   text-align: center;
-
-  padding: 14px 16px;
+width: 100%;
+  padding: 16px 18px;
   text-decoration: none;
   background-color:lightsalmon;
 }
@@ -158,9 +158,9 @@ ul {
 }
 
 /* td {
-
+  width: 100%;
   white-space: nowrap;
   column-span: 0;
   border-spacing: 0px;
-}
- */
+} */
+
