@@ -148,3 +148,17 @@ ul {
   text-decoration: none;
   background-color:lightsalmon;
 }
+
+
+.navmenu-table{
+  /* float: left; */
+  width: 100%
+  
+}
+
+td {
+
+  white-space: nowrap;
+  column-span: 4;
+}
+
