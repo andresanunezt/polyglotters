@@ -19,7 +19,7 @@
 </head>
   
   <body>
-
+<%= render "layouts/navmenu" %>
 <% if logged_in? %>
 <h2> Welcome <%= current_user.name %> </h2>
 
@@ -30,6 +30,6 @@
     <%= yield %>
   
   <%= render 'layouts/nav' %>
-  <%= render "layouts/navmenu" %>
+  <%# <%= render "layouts/navmenu" %> 
   </body>
 </html>
