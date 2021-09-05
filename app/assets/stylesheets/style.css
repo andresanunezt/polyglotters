@@ -36,11 +36,13 @@ a:visited {
 }
 h1,h2,h3, h4,p { 
     text-align: center;  
+   
                  
 }
 
 .navmenu {
     margin-bottom: 3cm;
+    margin-right: 3cm;
  }
 
 #if you set a div with a classname you can select it with dot notation ex: <div class="container"> . </div>
@@ -58,8 +60,8 @@ you would select with .<classname>
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+     
   }
 
   /* li a {
@@ -68,7 +70,7 @@ ul {
     background-color: #d41717;
   } */
 
- 
+
 
 .navbar {
    
@@ -96,8 +98,8 @@ ul {
 
   ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: .5;
+    padding: .5;
     width: 250px;
     background-color: lightgreen;
   }
@@ -122,11 +124,12 @@ ul {
    align-items: center;
  }
 
- .ul-card {
+ div.ul-card {
   /* Magic here */
   display: flex;
  justify-content: center; */
  align-items: center;
+ 
 
 }
 
@@ -143,9 +146,9 @@ ul.ul-ul {
 }
 
 h5.ul-ul {
-  padding-left: 1.5;
+  /* padding-left: 1.5; */
   text-align: center;
-  margin-left: 1;
+  margin-left: 0;
   
 }
 
@@ -160,12 +163,14 @@ h5.ul-ul {
   padding: 16px 18px;
   text-decoration: none;
   background-color: cornflowerblue;
+  /* margin-left: 0; */
 }
 
 
 .navmenu-table{
 
-  width: 100%
+  width: 100%;
+  margin-right: 1em;
   
 }
 
