@@ -4,20 +4,21 @@
 
 <div class="center">
 <ul>
-<p>
-Welcome to Polyglotters, a platform for people who enjoy learning multiple languages at the same time. Begin doccumenting your language language learning journeys by singing up or logging in with Google!
+<p class="homepage-paragraph">
+Welcome to Polyglotters, a platform for people who enjoy learning multiple languages at the same time.</p>
+<p class="homepage-paragraph">
+ Begin doccumenting your language language learning journeys by singing up or logging in with Google!
 </p>
 </ul>
 </div>
 
 
 <h4> The Latest Language Journeys : </h4>
-<div class="center">
-<% @latest_user_languages.each do | user_language |%>
 
+<% @latest_user_languages.each do | user_language |%>
+<div class="center">
 <ul>
  <li> <%= link_to ("#{user_language.user.name}'s #{user_language.language.name} Journey" ),user_language_path(user_language) %> </li>
  </ul>
-
-<% end %> 
  </div>
+<% end %> 

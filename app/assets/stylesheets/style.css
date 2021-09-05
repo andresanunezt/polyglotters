@@ -71,8 +71,8 @@ ul {
 }
 
 img {
-  width: 225px;
-  height: 225px;
+  width: 250px;
+  height: 250px;
 }
 .navbar {
    
@@ -177,6 +177,9 @@ h5.ul-ul {
   /* margin-left: 0; */
 }
 
+.homepage-paragraph {
+  font-weight: bold;
+}
 
 .navmenu-table{
 
