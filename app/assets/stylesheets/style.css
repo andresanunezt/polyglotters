@@ -10,12 +10,7 @@ body {
 }
 
 
-.header-img {
-    width: 100%;
-    height: 400px;
-    background: url('images/resized_logo.png');
-    background-size: cover;
-  } 
+
 #a hash syntax styles anchor tags
 a {
     text-decoration: none;      <<<removes underline from hyperlink
@@ -70,8 +65,15 @@ ul {
     background-color: #d41717;
   } */
 
+.logo {
+  text-align: center;
+  margin-bottom: 0;
+}
 
-
+img {
+  width: 225px;
+  height: 225px;
+}
 .navbar {
    
     /* font-size: ; */

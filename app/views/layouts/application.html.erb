@@ -20,21 +20,20 @@
   
   <body>
 <%# <%= render "layouts/navmenu" %> 
- <div class="logo">
-<img src="final_minimalist_logo.png" alt="rss feed" />
-</div> 
-
+ 
 <% if logged_in? %>
 <h2> Welcome <%= current_user.name %> </h2>
 
 <%  end %>
 
-
-    
+<div class="logo">
+<img src="final_minimalist_logo.png" alt="logo" />
+</div> 
+  <%= render "layouts/navmenu" %>     
     <%= yield %>
   
   <%= render 'layouts/nav' %>
   
-  <%= render "layouts/navmenu" %> 
+  <%# <%= render "layouts/navmenu" %>  
   </body>
 </html>

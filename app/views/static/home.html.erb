@@ -12,16 +12,14 @@
 </ul>
 </div>
 
-<br>
-<br>
 
-
-<h4  >Check Out The Latest Language Journeys: </h4>
-
-<% @latest_user_languages.each do | user_language |%>
+<h4> The Latest Language Journeys : </h4>
 <div class="center">
+<% @latest_user_languages.each do | user_language |%>
+
 <ul>
- <h5><li> <%= link_to ("#{user_language.user.name}'s #{user_language.language.name} Journey" ),user_language_path(user_language) %> </li></h5>
+ <li> <%= link_to ("#{user_language.user.name}'s #{user_language.language.name} Journey" ),user_language_path(user_language) %> </li>
  </ul>
- </div>
+
 <% end %> 
+ </div>
