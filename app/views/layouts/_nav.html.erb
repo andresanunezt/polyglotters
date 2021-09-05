@@ -4,7 +4,7 @@
 <% if logged_in? %>
 
 <div class="navbar">
-<ul className="navlinks-list">
+<ul className="side-nav">
 <li className="navlink-li">
 <%= link_to "Add Entry", new_user_user_language_path(current_user) %> 
 </li>
@@ -26,7 +26,7 @@
 <br>
 
 <div class="navbar">
-<ul className="navlinks-list">
+<ul class="side-nav">
 <li className="navlink-li">
 <%= link_to "Sign Up", new_user_path %> <br>
 </li>
@@ -37,6 +37,7 @@
  <%= button_to "Log in with Google", '/auth/google_oauth2/'%> 
 </li>
 </ul>
+
 </div>
 
 <% end %>
