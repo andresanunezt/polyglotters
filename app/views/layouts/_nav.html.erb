@@ -33,11 +33,9 @@
 <li className="navlink-li">
 <%= link_to "Log In",  login_path    %>
 </li>
-<li className="navlink-li">
- <%= button_to "Log in with Google", '/auth/google_oauth2/'%> 
-</li>
-</ul>
 
+</ul>
+<%= button_to "Log in with Google", '/auth/google_oauth2/'%> 
 </div>
 
 <% end %>
