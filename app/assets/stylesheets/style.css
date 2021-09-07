@@ -5,8 +5,8 @@ body {
     background-color: lightblue;       <<<Try hexadecimal, RGB, color
     background-size: 100%;         <<< Try %, pixels(px)
     color: white;                  <<<Try hexadecimal, RGB, word
-    text-align: center;            <<<Try left/right/center
-
+           
+  
 }
 
 
@@ -40,13 +40,7 @@ h1,h2,h3, h4,p {
     margin-right: 3cm;
  }
 
-#if you set a div with a classname you can select it with dot notation ex: <div class="container"> . </div>
-you would select with .<classname>
-.container {
-}
-#selecting a anchor tag within a nav tag <nav> <%=link_to "whatever", user_path</nav>
-.nav a {                     <<<<can access nested tags this way
-}
+
 
 .error {
     color: red;
@@ -59,11 +53,6 @@ ul {
      
   }
 
-  /* li a {
-    display: block;
-    width: 10px;
-    background-color: #d41717;
-  } */
 
 .logo {
   text-align: center;
@@ -76,7 +65,7 @@ img {
 }
 .navbar {
    
-    /* font-size: ; */
+ 
     padding: 30px;
     font-size: medium;
   }
@@ -100,7 +89,7 @@ img {
 
   ul {
     list-style-type: none;
-    /* margin: .5; */
+    
     padding: .5;
     width: 250px;
     background-color: lightblue;
@@ -128,29 +117,22 @@ img {
   }
 
   .center {
-    /* Magic here */
+    
    display: flex;
    justify-content: center;
    align-items: center;
-   /* margin: 0em; */
+   
  }
 
  div.ul-card {
-  /* Magic here */
+ 
   display: flex;
- justify-content: center; */
+ justify-content: center; 
  align-items: center;
  
 
 }
 
- .logo-image{
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -6px;
-}
  
 ul.ul-ul {
   background-color: darkkhaki;
@@ -164,9 +146,8 @@ h5.ul-ul {
 }
 
 
-
 .navmenu-li {
-  /* float: left; */
+  float: left;
   display: block;
   color: white;
   text-align: center;
@@ -177,6 +158,19 @@ h5.ul-ul {
   /* margin-left: 0; */
 }
 
+.navmenu-last-li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 16px 16px;
+  text-decoration: none;
+  background-color: cornflowerblue;
+  margin-right: 16px;
+  padding-right: 5px;
+  /* margin-left: 0; */
+}
 .homepage-paragraph {
   font-weight: bold;
 }
