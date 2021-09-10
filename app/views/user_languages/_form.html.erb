@@ -1,8 +1,8 @@
 <div class="center">
 
 <%= form_with model: @user_language do |f| %>
-    <br>
-    <br>
+    
+   
     <%= f.collection_select :language_id, Language.all, :id, :name %>
     <br>
     <%= f.label :learned, "What did you last learn?" %><br>

@@ -1,7 +1,7 @@
 body {
   background-color: lightblue;
   background-size: 100%;
-  color: white;
+  color: rgb(104, 64, 3);
 }
 
 #a hash syntax styles anchor tags a {
@@ -77,14 +77,6 @@ img {
   text-align: center;
 }
 
-.navlink-li {
-  display: inline;
-  margin: 20px;
-  text-align: center;
-  padding-top: 18px;
-  padding-bottom: 16px;
-}
-
 ul.side-nav {
   list-style-type: none;
   padding: 0.5;
@@ -94,7 +86,7 @@ ul.side-nav {
 
 li a {
   display: block;
-  color: rgb(0, 0, 0);
+  color: rgb(104, 64, 3);
   padding: 8px 16px;
   text-decoration: none;
 }
@@ -110,12 +102,6 @@ li a:hover {
   align-items: center;
 }
 
-div.ul-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 ul.ul-ul {
   background-color: darkkhaki;
 }
@@ -126,32 +112,6 @@ h5.ul-ul {
   margin-left: 0;
 }
 
-/* .navmenu-li {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  width: 100%;
-  padding: 16px 18px;
-  text-decoration: none;
-  background-color: cornflowerblue;
- 
-} */
-
-/* .navmenu-last-li {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  width: 100%;
-  padding: 16px 18px;
-  text-decoration: none;
-  background-color: cornflowerblue;
-} */
 .homepage-paragraph {
   font-weight: bold;
 }
-
-/* .navmenu-table {
-  width: 100%;
-} */
