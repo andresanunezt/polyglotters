@@ -3,32 +3,31 @@
 <div class="ul-card">
 <ul class="ul-ul">
 <h5><li>  Last learned: </li></h5>
-<%= @user_language.learned%>
+<p><%= @user_language.learned%></p>
 <br>
 <h5> I'd like to learn:</h5>
-<%= @user_language.learn_next%>
+<p><%= @user_language.learn_next%></p>
 <br>
 
 <h5> Need to review:</h5>
 <% if  @user_language.review.empty? %>
-nothing at the moment
+<p>nothing at the moment</p>
 <% else %>
-<%= "#{@user_language.review}" %> 
+<p><%= "#{@user_language.review}" %> </p>
 <% end %>
 <h5> Time Spent:</h5>
-<%= "#{@user_language.time_spent} Hours" %> 
+<p><%= "#{@user_language.time_spent} Hours" %></p> 
 <h5> Currently Enjoying?</h5>
 <% if  @user_language.enjoying  == true %>
- yes 
+<p> yes <p/>
 <% else %>
- no 
+<p> no <p/>
 <% end%>   
 
 
+<h5><%= link_to "view all language journeys!", user_languages_path %></h5>
 <br>
-<br>
-<h4 class="ul-show-link"><%= link_to "view all language journeys!", user_languages_path %></h4>
-<br>
+
 </ul>
 </div>
 <% if logged_in? && current_user.id == @user_language.user.id%>
