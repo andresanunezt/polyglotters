@@ -1,15 +1,15 @@
 <% if flash[:alert]%>
-<h4 class="error">  <%=  flash[:alert]%> </h4>
+<h5 class="error">  <%=  flash[:alert]%> </h5>
 <% end %>
-<h2>LOG IN TO POLYGLOT</h2>
-<h4>
+<h4>LOG IN TO POLYGLOT</h4>
+<div class="center">
 <%= form_with url: '/login' do |f| %>
   
     
     <%= f.label :username %>
-    <%= f.text_field :username %><br>
+    <%= f.text_field :username %>
 
-        <br>
+       
     
     <%= f.label :password %>
     <%= f.password_field :password %><br>
@@ -18,10 +18,10 @@
     
     <%= f.submit "login" %>
 <% end %>
-</h4>
 
+</div>
 <br>
 <br>
-<h4> OR </h4>
+<p> OR </p>
 
-  <h4> <%= button_to "Log in with Google", '/auth/google_oauth2/'%> </h4>
+  <h5> <%= button_to "Log in with Google", '/auth/google_oauth2/'%> </h5>
