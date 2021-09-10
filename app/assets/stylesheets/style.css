@@ -1,58 +1,63 @@
 body {
-    
-
-    
-    background-color: lightblue;       <<<Try hexadecimal, RGB, color
-    background-size: 100%;         <<< Try %, pixels(px)
-    color: white;                  <<<Try hexadecimal, RGB, word
-           
-  
+  background-color: lightblue;
+  background-size: 100%;
+  color: white;
 }
 
-
-
-#a hash syntax styles anchor tags
-a {
-    text-decoration: none;      <<<removes underline from hyperlink
-    font-family: Arial;         <<< can also customize fonts
-    font-size: 30px;            <<<px,%,small, medium, large
-    font-weight: bold;          <<<Thin/light/normal/medium/bold
+#a hash syntax styles anchor tags a {
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-a:hover styles links as a mouse hovers over them. a:visited styles links that have been clicked on.
-a:link {             
-    color: white;
+a:hover
+  styles
+  links
+  as
+  a
+  mouse
+  hovers
+  over
+  them.
+  a:visited
+  styles
+  links
+  that
+  have
+  been
+  clicked
+  on.
+  a:link {
+  color: white;
 }
 a:hover {
-    color:yellow;
+  color: yellow;
 }
 a:visited {
-    color: clear;
+  color: clear;
 }
-h1,h2,h3, h4,p { 
-    text-align: center;  
-   
-                 
+h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
 }
 
 .navmenu {
-    margin-bottom: 3cm;
-    /* margin-right: 3cm; */
- }
-
-
+  margin-bottom: 3cm;
+  /* margin-right: 3cm; */
+}
 
 .error {
-    color: red;
-    font-size: 30px; 
+  color: red;
+  font-size: 30px;
 }
 
 ul {
-    list-style-type: none;
-
-     
-  }
-
+  list-style-type: none;
+}
 
 .logo {
   text-align: center;
@@ -64,75 +69,64 @@ img {
   height: 250px;
 }
 .navbar {
-   
- 
-    padding: 30px;
-    font-size: medium;
-  }
-  
-  .navlinks-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .navlink-li {
-    display: inline;
-    margin: 20px;
-    text-align: center;
-    padding-top: 18px;
-    padding-bottom: 16px;
-  }
-
- 
-
-  ul {
-    list-style-type: none;
-    
-    padding: 1;
-    width: 250px;
-    background-color: lightblue;
-  }
-
-  ul.side-nav {
-    list-style-type: none;
-    padding: .5;
-    width: 250px;
-    background-color: lightcoral;
-  }
-  
-  li a {
-    display: block;
-    color: rgb(0, 0, 0);
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-  
-
-  li a:hover {
-    background-color: #555;
-    color: white;
-  }
-
-  .center {
-    
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   
- }
-
- div.ul-card {
- 
-  display: flex;
- justify-content: center; 
- align-items: center;
- 
-
+  padding: 30px;
+  font-size: medium;
 }
 
- 
+.navlinks-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navlink-li {
+  display: inline;
+  margin: 20px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
+ul {
+  list-style-type: none;
+
+  padding: 1;
+  width: 250px;
+  background-color: lightblue;
+}
+
+ul.side-nav {
+  list-style-type: none;
+  padding: 0.5;
+  width: 250px;
+  background-color: lightcoral;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.ul-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 ul.ul-ul {
   background-color: darkkhaki;
 }
@@ -141,9 +135,7 @@ h5.ul-ul {
   padding-left: 1.5;
   text-align: center;
   margin-left: 0;
-  
 }
-
 
 .navmenu-li {
   float: left;
@@ -166,16 +158,11 @@ h5.ul-ul {
   padding: 16px 18px;
   text-decoration: none;
   background-color: cornflowerblue;
- 
 }
 .homepage-paragraph {
   font-weight: bold;
 }
 
-.navmenu-table{
-
+.navmenu-table {
   width: 100%;
- 
-  
 }
-
