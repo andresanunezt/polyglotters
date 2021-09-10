@@ -4,7 +4,7 @@
  <% if params[:user_id] %>
 <h1>  <%= "#{@user.name}'s " %> language learning journeys! </h1>
  <% else %>
-<h1>Check Out These Polyglotters' Language Learning Journey! </h1>
+<h4>Check Out These Polyglotters' Language Learning Journey! </h4>
 <div class="center">
 <%= form_tag("/user_languages", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
