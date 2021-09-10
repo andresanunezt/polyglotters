@@ -88,13 +88,13 @@ img {
   padding-bottom: 16px;
 }
 
-ul {
+/* ul {
   list-style-type: none;
 
   padding: 1;
   width: 250px;
   background-color: lightblue;
-}
+} */
 
 ul.side-nav {
   list-style-type: none;
@@ -137,7 +137,7 @@ h5.ul-ul {
   margin-left: 0;
 }
 
-.navmenu-li {
+/* .navmenu-li {
   float: left;
   display: block;
   color: white;
@@ -146,10 +146,10 @@ h5.ul-ul {
   padding: 16px 18px;
   text-decoration: none;
   background-color: cornflowerblue;
-  /* margin-left: 0; */
-}
+ 
+} */
 
-.navmenu-last-li {
+/* .navmenu-last-li {
   float: left;
   display: block;
   color: white;
@@ -158,11 +158,11 @@ h5.ul-ul {
   padding: 16px 18px;
   text-decoration: none;
   background-color: cornflowerblue;
-}
+} */
 .homepage-paragraph {
   font-weight: bold;
 }
 
-.navmenu-table {
+/* .navmenu-table {
   width: 100%;
-}
+} */
