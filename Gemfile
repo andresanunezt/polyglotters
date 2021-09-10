@@ -26,7 +26,7 @@ gem 'pry'
 gem 'omniauth'
 gem 'omniauth-rails_csrf_protection'
 gem 'omniauth-google-oauth2'
-
+gem 'materialize-sass', '~> 1.0.0'
 gem 'dotenv-rails'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
