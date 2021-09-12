@@ -25,15 +25,16 @@
 <% end%>   
 
 
-<h5><%= link_to "All Journeys!", user_languages_path %></h5>
+<button><%= link_to "All Journeys!", user_languages_path %></button>
 <br>
-
+<br>
 </ul>
 </div>
 <% if logged_in? && current_user.id == @user_language.user.id%>
 <div class="center">
 <ul>
 <button><li><%= link_to "Edit", edit_user_user_language_path(@user_language) %></li></button>
+<br>
 <br>
 <button><li><%= link_to "Delete", user_language_path(@user_language), data: { method: :delete } %></li> </button>
 </ul>
