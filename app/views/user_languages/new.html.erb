@@ -1,9 +1,9 @@
-<h1>Add a Language to Your Roster!</h1>
+<h5>Add a Language to Your Roster!</h5>
 <br>
     <% if @user_language.errors.any? %>
         <% @user_language.errors.full_messages.each do |error| %>
         
-            <h4 class="error"><%= error %></h4>
+            <p class="error"><%= error %></p>
 
         <% end %>
     <% end %>

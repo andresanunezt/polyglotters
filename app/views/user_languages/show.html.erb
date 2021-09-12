@@ -33,9 +33,9 @@
 <% if logged_in? && current_user.id == @user_language.user.id%>
 <div class="center">
 <ul>
-<h4><li><%= link_to "Edit", edit_user_user_language_path(@user_language) %></li></h4>
+<button><li><%= link_to "Edit", edit_user_user_language_path(@user_language) %></li></button>
 <br>
-<h4><li><%= link_to "Delete", user_language_path(@user_language), data: { method: :delete } %></li> </h4>
+<button><li><%= link_to "Delete", user_language_path(@user_language), data: { method: :delete } %></li> </button>
 </ul>
 </div>
 <% end %>
