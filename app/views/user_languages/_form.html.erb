@@ -2,6 +2,7 @@
 
 <%= form_with model: @user_language do |f| %>
     
+  
    
     <%= f.collection_select :language_id, Language.all, :id, :name %>
     <br>
@@ -13,11 +14,12 @@
     <%= f.text_area :review %> <br>
     <%= f.label :time_spent, "How many hours did you spend?"%> <br>
     <%= f.number_field :time_spent %> <br>
-    <br>
+    
      <%# <%= f.collection_select :user_id, User.all, :id, :name %> 
      <%= f.hidden_field :user_id %>
     <br>
     <br>
+     
     <%= f.label :enjoying, "Currently Enjoying?", value: false %> <br>
     <%= f.radio_button :enjoying, value = true %>
     <%= f.label :enjoying, "Yes" %>
