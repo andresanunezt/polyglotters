@@ -5,28 +5,30 @@
   
    
     <%= f.collection_select :language_id, Language.all, :id, :name %>
-    <br>
-    <%= f.label :learned, "What did you last learn?" %><br>
+
+    <%= f.label :learned, "What did you last learn?" %>
     <%= f.text_area :learned%><br>
-     <%= f.label :learn_next, "What would you like to learn next?" %> <br>
+     <%= f.label :learn_next, "What would you like to learn next?" %>
     <%= f.text_area :learn_next %> <br>
-    <%= f.label :review, "What do you need to review?" %> <br>
+    <%= f.label :review, "What do you need to review?" %> 
     <%= f.text_area :review %> <br>
-    <%= f.label :time_spent, "How many hours did you spend?"%> <br>
+    <%= f.label :time_spent, "How many hours did you spend?"%> 
     <%= f.number_field :time_spent %> <br>
     
      <%# <%= f.collection_select :user_id, User.all, :id, :name %> 
      <%= f.hidden_field :user_id %>
-    <br>
-    <br>
      
-    <%= f.label :enjoying, "Currently Enjoying?", value: false %> <br>
+     
+    <%= f.label :enjoying, "Currently Enjoying?", value: false %> 
     <%= f.radio_button :enjoying, value = true %>
     <%= f.label :enjoying, "Yes" %>
     <%= f.radio_button :enjoying, value = false %>
     <%= f.label :enjoying, "No" %>
-    <br>
-        <br><br>
+
+
+    
+ 
+   
             
             <%= f.submit "Track your Journey!" %>
           
