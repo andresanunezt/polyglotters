@@ -2,7 +2,7 @@
 
 Welcome to Polyglotters webapp, a platform for people who enjoy learning multiple languages at the same time. Users can document their language learning journeys.
 
-Check out the [DEMO VIDEO](https://www.youtube.com/watch?v=XT9eF8uy3fE&t=4s).
+Check out the [DEMO VIDEO](https://www.youtube.com/watch?v=tKFqRG8p9e0&t=0s).
 
 ## Installation
 
